@@ -4,9 +4,55 @@
     <meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>About Me</title>
+    <style>
+      html, body {
+        height: 90%;
+        margin: 0;
+        background-color: purple;
+      }
+      
+      section {
+        position: relative;
+        text-align: center;
+        top: 30%;
+        color: green;
+      }
+      #hex {
+        position: fixed;
+        top: 88%;
+        width: 100%;
+        text-align: center;
+        padding: 4%0;
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
+    <section>
+    <h1>Melanie Treuhaft</h1>
+    <h2>Three interesting things about me are:</h2>
+    <p>I love painting.</p>
+    <p>I'm a good cook, but don't use recipes.</p>
+    <p>My partner and I used to make windchimes.</p>
+    </section>
     
+    <div id="hex"></div>
+    <script>
+      var s1, s2, s3, color;
+      function displayTime() {
+      s1 = Math.floor((Math.random() * 89) + 10);
+      s2 = Math.floor((Math.random() * 89) + 10);
+      s3 = Math.floor((Math.random() * 89) + 10);
+        
+      color = "#" + s1 + s2 + s3;
+      var hex = document.getElementById("hex");
+      hex.style.background = color;
+      hex.innerHTML = color;
+        
+      setTimeout(displayTime, 2000);
+      }
+      displayTime();
+    </script>  
   </body>
 </html>
