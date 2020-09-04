@@ -1,0 +1,28 @@
+/* 4 main CSS Selectors */
+
+/* By Type (element name) */
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.3em;
+}
+p {
+  background: deepskyblue;
+}
+
+/* By Class */
+.heading {
+  color: gray;
+}
+
+/* By ID */
+#copyright {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Universal Selector (ALL) */
+* {
+  font-family: monospace;
+}

@@ -1,0 +1,29 @@
+/* 
+Type has the lowest
+0-0-1
+Class has a medium
+0-1-0
+ID has the highest
+1-0-0
+*/
+
+h1.heading {
+  color: deepskyblue;
+}
+
+.heading {
+  color: tomato;
+}
+
+p#copyright {
+  font-weight: normal;
+  font-style: italic;
+}
+
+p {
+  font-weight: bold;
+}
+
+h1, h2, p {
+  color: gray;
+}

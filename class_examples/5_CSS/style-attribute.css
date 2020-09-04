@@ -1,0 +1,25 @@
+/* Does it have the attribute? */
+[title] {
+  font-style: italic;
+}
+
+/* Matched Exactly */
+[class="heading"] {
+  color: deepskyblue;
+}
+/* Contains */
+[title*="b"] {
+  font-variant: small-caps;
+}
+/* Starts With */
+[id^="c"] {
+  font-size: 10em;
+}
+/* Ends With */
+[id$="n"] {
+  letter-spacing: 0.5em;
+}
+/* Space Separated List */
+[title~="Dev"] {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,33 @@
+body {
+  font-size: 1em;
+  margin-left: 2em;
+  width: 50%;
+}
+
+header {
+  padding-bottom: .75em;
+  border-bottom: 3px dotted black;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/* rem vs. em */
+section {
+  font-size: 2em;
+}
+
+section h2 {
+  font-size: 4em;
+}
+
+section p {
+  font-size: 4rem;
+}
