@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+
+-3 Types of CSS Includes
+  -External Style Sheets (Recommended Way!)
+  -Internal Style Sheets
+  -Inline Styles (Not Recommended Way!)
+
+selector {
+  property: value;
+  property2: value;
+  property3: value;
+}
+
+Comments /* */
+
+-->
+<html lang="en-us">
+  <head>
+    <title>Using CSS</title>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<!-- External Stylesheet -->
+		<link rel="stylesheet" href="external.css" type="text/css">
+		<style>
+		  /* CSS Internal Stylesheet */
+		  .heading {
+		    color: grey;
+		  }
+		</style>
+  </head>
+  <body>
+    <header id="head">
+      <h1 class="heading" style="font-size: 160%;">Web Development</h1>
+    </header>
+    <section>
+      <h2 class="heading" style="color: green;">HTML5</h2>
+      <p>We're currently learning HTML5</p>
+      <h2 class="heading">JavaScript</h2>
+      <p>JavaScript is another topic related to Web Development</p>
+    </section>
+    <footer>
+      <p id="copyright">&copy; Luke Sathrum</p>
+    </footer>
+  </body>
+</html>
