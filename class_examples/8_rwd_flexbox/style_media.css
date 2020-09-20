@@ -1,0 +1,28 @@
+section,
+aside {
+  background: deepskyblue;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media all and (min-width: 600px) {
+  section,
+  aside {
+    margin: 1%;
+  }
+  section {
+    float: left;
+    width: 58%;
+  }
+  aside {
+    float: right;
+    width: 38%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
