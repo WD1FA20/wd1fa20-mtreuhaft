@@ -1,0 +1,59 @@
+/* Some CSS Setup - nothing to do with flexbox */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #495057;
+  padding:20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all .5s;
+}
+
+a:hover {
+  background:rgba(73,80,87,0.6);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:50px;
+}
+
+/* Flex Container */
+.flex-nav ul {
+  border:1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile First Design Goes Here */
+
+
+/* Change when viewport is at least 500px wide */
+@media all and (min-width:500px) {
+
+
+}
+
+/* Change when viewport is at least 1000px wide */
+@media all and (min-width:1000px) {
+
+
+}

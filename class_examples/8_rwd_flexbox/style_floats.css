@@ -1,0 +1,18 @@
+header, section, aside, footer {
+  background: tomato;
+  padding: 3em;
+  margin: 3em;
+  text-align: center;
+}
+
+section {
+  float: left;
+}
+
+aside {
+  float: right;
+}
+
+footer {
+  clear: both;
+}
