@@ -41,19 +41,40 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 
-/* Mobile First Design Goes Here */
+/* Mobile First Design Goes Here. The menu items take up the 
+whole row and the social media icons still just 
+take up 25% of each row.*/
+li {
+  width:100%;
+}
+.social{
+  flex-wrap:nowrap;
+  width:25%;
+}
 
-
-/* Change when viewport is at least 500px wide */
+/* Change when viewport is at least 500px wide The menu items 
+with words take up 50% of each row and the social media icons 
+takeup 25% ofeach row.*/
 @media all and (min-width:500px) {
-
-
+  li {
+    width:50%;
+  }
 }
 
-/* Change when viewport is at least 1000px wide */
+/* Change when viewport is at least 1000px wide 
+The menu item with words are 3x as large as the 
+social media icons.*/
 @media all and (min-width:1000px) {
-
-
+  li{
+    flex-wrap:nowrap;
+    flex:3;
+  }
+  .social{
+    flex:1;
+  }
 }
