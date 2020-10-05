@@ -1,0 +1,41 @@
+/* Write Grid CSS Styles Here */
+
+.albums{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+
+}
+
+.album{
+  display: grid;
+  background-color: rgba(250,250,250,.5); 
+  padding: 20px;
+  margin:10px;
+  border-radius: 5px;
+  grid-template-columns: 150px 1fr;
+  grid-column-gap: 20px;
+  grid-template-areas: "image details"
+                       "image artist"
+                       "image description";
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.album__artwork{
+  grid-area: image;
+}
+
+.album__details{
+  grid-area: details;
+}
+
+.album__artist{
+  grid-area: artist;
+}
+
+.album__desc{
+  grid-area: description;
+}
