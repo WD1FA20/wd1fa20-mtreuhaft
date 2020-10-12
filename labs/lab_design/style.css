@@ -1,0 +1,75 @@
+/* I really strugged with the curve around the edges
+of the form, I couldn't get the image to curve*/
+
+section{
+    background: #232323;
+}
+form {
+    display: grid;
+    grid-template-rows: 10px 40px 30px 30px 10px;
+    grid-gap:10px;
+    grid-template-areas:"topimage"
+                        "header"
+                        "emailenter"
+                        "submit"
+                        "bottomimage";
+    background: #f3ede2;
+    max-width: 280px;
+    min-width: 280px;
+    border: 20px solid #232323;
+    border-radius: 5px;
+    margin:20px;
+    align-items: center;
+    justify-items: center;
+}
+
+form:first-child {
+    grid-area: topimage;
+}
+form:last-child {
+    grid-area: bottomimage;
+    border:1px solid transparent;
+    border-radius: 10px;
+}
+
+h1 {
+  color: #d16f40;
+  font-family: "Arial";
+  letter-spacing: 4px;
+  font-size: 15px; 
+  grid-area: header; 
+  padding: 15;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+input{
+    background-color: #f3e6dc;
+    color: #222222;
+    font-style: italic;
+    font-family: "Times New Roman";
+    font-size: 15px;
+    grid-area: emailenter;
+    padding:5px;
+    padding-left: 15px;
+    justify-self: stretch;
+    border: 1px solid #fac695;
+    border-radius: 5px;
+    margin:20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+button{
+    background-color: #d16f40;
+    color: #f3ede2;
+    font-family: "Arial";
+    font-size: 12px;
+    letter-spacing: 4px;
+    grid-area: submit;
+    padding:5px;
+    justify-self: stretch;
+    border: 1px solid #a90329;
+    border-radius: 5px;
+    margin:20px;
+}
