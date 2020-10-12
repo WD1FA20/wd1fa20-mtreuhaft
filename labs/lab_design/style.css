@@ -14,13 +14,16 @@ form {
                         "submit"
                         "bottomimage";
     background: #f3ede2;
-    max-width: 280px;
-    min-width: 280px;
+    max-width: 270px;
+    min-width: 270px;
     border: 20px solid #232323;
     border-radius: 5px;
     margin:20px;
     align-items: center;
     justify-items: center;
+    background-image: url("stripe.png"), url("stripe.png");
+    background-position: top, bottom; 
+    background-repeat: no-repeat;
 }
 
 form:first-child {
@@ -28,7 +31,7 @@ form:first-child {
 }
 form:last-child {
     grid-area: bottomimage;
-    border:1px solid transparent;
+    border:0px solid transparent;
     border-radius: 10px;
 }
 
@@ -38,7 +41,7 @@ h1 {
   letter-spacing: 4px;
   font-size: 15px; 
   grid-area: header; 
-  padding: 15;
+  padding: 15px;
   margin-top:30px;
   margin-bottom:30px;
 }
