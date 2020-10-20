@@ -1,0 +1,31 @@
+/* Default Styles */
+:root {
+    --font: #212529;
+    --medium-gray: #6C757D;
+    --light-gray: #DEE2E6;
+    --light-light-gray: #F7F7F7;
+    --white: #FFFFFF;
+    --btn: #28A745;
+    --btn-hover: #218838;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+      /* border-box box model allows us to add padding and border to our elements without increasing their size */
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+}
+
+img {
+	/* Make Images Responsive */
+    max-width: 100%;
+}
+/* END Default Styles */
