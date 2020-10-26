@@ -49,8 +49,8 @@ button{
 }
 .maincontent{
   display: grid;
-  grid-template-columns: 960px;
-  justify-content: center;
+  /*grid-template-columns: 960px;*/
+  /*justify-content: center;*/
 }
 p, a{
   color: var(--medium-gray);
@@ -97,8 +97,8 @@ hr{
 .ctas{
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 960px;
+  grid-template-columns: repeat(3, 1fr);
+  /*max-width: 960px;*/
   grid-auto-flow: row;
 }
 .cta h2{
@@ -132,10 +132,10 @@ hr{
 
 /*Section features*/
 .features{
-  max-width: 960px;
+  /*max-width: 960px;*/
   display:grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 .features p{
@@ -154,12 +154,9 @@ h4{
     grid-gap: 10px;
     justify-items:center;
   }
-  .features{
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    justify-content: space-around;  
-  }
+
   .ctas{
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
   .enterprise {
     grid-column: 1 / span 2;
