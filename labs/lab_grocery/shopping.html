@@ -1,0 +1,37 @@
+<!-- 
+  * Filename:    shopping.html
+  * Description: Grocery list
+  * Author:      Melanie Treuhaft
+  * Date:        11/12/20
+-->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Grocery List</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <form action="shopping.html" method:'get' id="grocery-list">
+      Item Name: <input type="text" name="item" id='item'><br>
+      Quantity: <input type="number" name="quantity" id="quantity"><br> 
+      Category: <select name="category" id="category">
+        <option value="none">Select a category</option>
+        <option value="dairy">Dairy</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="meat">Meat</option>
+        <option value="bakery">Bakery</option>
+        <option value="canned">Canned Goods</option>
+      </select><br>
+      <input type="submit" value="Submit">
+    </form>
+    <ul>
+    </ul>
+    <button id="first">Delete First Item</button>
+    <button id="last">Delete Last Item</button>
+    <script src="shopping.js"></script>
+  </body>
+</html>

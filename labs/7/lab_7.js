@@ -73,7 +73,7 @@ for (let questionObject of questions) {
   // the array 
 }
 
-document.write("<br>" + "<br>" + " Your score is " + score + "/" + questions.length);
+document.write("<br>" + "<br>" + " Your score is " + score + "/" + questions.length + ".");
 
 // Output to the user via HTML the number of questions they got right out of the
 // total.

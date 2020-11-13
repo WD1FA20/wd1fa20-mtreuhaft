@@ -1,0 +1,23 @@
+html{
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial";
+  color: green;
+}
+
+body{
+    box-sizing: border-box;
+    background: lightgreen;
+}
+
+form{
+    margin: 20px;
+}
+
+input, select, button{
+    margin: 10px;
+}
+
+button, input, select{
+    color: green;
+    border-color: green;
+}
