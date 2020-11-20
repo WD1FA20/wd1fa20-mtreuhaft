@@ -1,0 +1,44 @@
+body {
+    margin: 0 auto 50px;
+    width: 700px;
+}
+
+#main-content {
+    width: 480px;
+    float: left;
+}
+
+#main-content .article > img {
+    float: left;
+    margin-right: 20px;
+    
+}
+
+#news {
+    margin-left: 20px;
+    float: left;
+    width: 200px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.tomato {
+    color: tomato;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#reversed #main-content {
+    float: right;
+    margin-left: 20px;
+}
+
+#reversed #news {
+    margin-left: 0px;
+}
