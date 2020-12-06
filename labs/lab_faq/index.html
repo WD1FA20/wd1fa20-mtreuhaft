@@ -1,0 +1,42 @@
+<!--
+- Filename:		index.html
+- Description:	FAQ
+- Author:		Melanie Treuhaft
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lab FAQ</title>
+</head>
+
+<body>
+    <button id='hide-all'>Hide All</button>
+    <button id='show-all'>Show All</button>
+    <hr class="solid">
+    <h1>A One Page FAQ</h1>
+    <hr class="solid">
+    <ul id='FAQs'>
+        <li><button class='toggle'>+</button>I've heard that JavaScript is the long lost fountain of youth. True?</li>
+        <p>No, but getting old isn't so bad.<p>
+        <li><button class='toggle'>+</button>Can JS solve all my problems?</li>
+        <p>Absolutely. Name your biggest problem.</p>
+        <li><button class='toggle'>+</button>Is there nothing JS can't do?</li>
+        <p>Nope, it is magic.</p>
+    </ul>
+    <hr class="solid">
+    <h1>Add a Question/Answer</h1>
+    <hr class="solid">
+    <form action='script.js' method='get' id='question_form'>
+      FAQ Question: <input type='text' name='question' id='question' value='ask a question'><br>
+      FAQ Answer: <textarea name='answer' id='answer'>Answer it</textarea><br>
+      <input type='submit' value='Add FAQ' id='submit'><br>
+    </form>
+      <!-- jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>

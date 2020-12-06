@@ -9,13 +9,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>The World Evades Us</title>
 </head>
 
 <body>
+  <nav id="placeholder"></nav>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  
+  <header>
     <h1>The World Evades Us</h1>
-	<p>The Beginning</p>
+  </header>
+  
+  <section class='galleryWrapper'>
+    <p>The World Evades Us: Surveying Composite Meanings of Place
+    <br>
+    A collaboration with Tammy LePham and Shanna Sordahl at <a href='https://www.1078gallery.org/the-world-evades-us.html'>1078 Gallery</a> in Chico, CA
+    <br>
+    October 18–November 10, 2019
+    <br>
+    Funded in part by a City of Chico Arts and Culture Grant</p>
+    <section class='video'>
+      <iframe src="https://player.vimeo.com/video/378014534" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </section>
+    <!--images go here-->  
+    <section class='imageGallery'>
+      <img src='TWEU_1.jpg'>
+      <img src='TWEU_2.jpg'>
+      <img src='TWEU_3.jpeg'>
+      <img src='TWEU_4.jpg'>
+      <img src='TWEU_5.jpg'>
+      <img src='TWEU_6.jpg'>
+      <img src='TWEU_7.jpg'>
+      <img src='TWEU_8.jpg'>
+  <!-- https://www.w3schools.com/howto/howto_css_modal_images.asp
+      Trigger the Modal -->
+      <img id="myImg" src="TWEU_9.jpg" alt="Show" style="width:100%;max-width:300px">
+      
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+      
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+      
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+      </div>
+</div>
+    </section>
+  </section>
 </body>
 
 </html>

@@ -1,0 +1,295 @@
+/*
+- Filename:		stlye.css
+- Description:	styling for my website
+- Author:		Melanie Treuhaft
+- Date: 11/21/2020
+*/
+
+html{
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  font-family: "Avenir Light", "Arial Narrow", sans-serif; 
+} 
+header{
+  display:grid;
+}
+.wrapper{
+  display:grid;
+}
+h1{
+  place-self: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+h2{
+  font-size:20px;
+}
+.video{
+  display:grid;
+}
+iframe{
+  place-self: center;
+}
+a{
+  text-decoration: none;
+}
+
+/*NAVBAR START*/
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+}
+.navbar div{
+  padding:5px;
+}
+.about .work .contact{
+  place-self: center;
+}
+.logo{
+  justify-self: start;
+}
+.dropdown-content {
+  display: none;
+  position: absolute; /*what does this mean?*/
+  background-color: #f5f5f5;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border: 1px;
+  border-color: #f5f5f5;
+  border-radius: 2px;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px 5px;
+  display: block;
+  font-size:12px;
+}
+/*button*/
+.dropbtn{
+  border:none;
+  background-color: white;
+  font-family: "Avenir Light", "Arial Narrow", sans-serif; 
+}
+/*button goes bold upon hover*/
+.dropbtn:hover {font-weight: bold;}
+/*contact link*/
+.dropdown a{
+  text-decoration: none;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/*Reference: W3 Schools https://www.w3schools.com/howto/howto_css_dropdown.asp*/
+/*END NAVBAR*/
+
+/*Footer styling*/
+footer{
+  display: grid;
+}
+footer p{
+  place-self: center;
+  font-size: 10px;
+}
+/*END Footer*/
+
+/*Category styling*/
+.projectGallery {
+  justify-content:center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+}
+.project{
+  height: 200px;
+  margin: 0;
+  color: transparent;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  font-style: bold;
+}
+.memory{
+  background-image: url("In_Memory_project_image.jpg");
+  background-size: cover;
+}  
+.evades{
+  background-image: url("TWEU_project_image.jpg");
+  background-size: cover;
+}
+.rosacea{
+  background-image: url("Rosacea_project_image.jpg");
+  background-size: cover;
+}
+.staging{
+  background-image: url("Staging_project_image.jpg");
+  background-size: cover;
+}
+.cast{
+  background-image: url("CAST_project_image.jpg");
+  background-size: cover;
+}
+.non-linear{
+  background-image: url("Non-Linear-Fallout_project_image.jpg");
+  background-size: cover;
+}
+.WAWWM{
+  background-image: url("WAWWM_project_image.jpg");
+  background-size: cover;
+}
+.gss{
+  background-image: url("GSS_project_image.jpg");
+  background-size: cover;
+}
+.project:hover {color:#FFFFFF; opacity:.7;}
+/*END Category styling*/
+
+/*Project styling*/
+.galleryWrapper{
+  display:grid;
+  grid-gap:30px;
+  margin:30px;
+}
+.galleryWrapper p{
+  margin:0px;
+  text-align: center;
+}
+.imageGallery {
+  justify-content:center;
+  display: grid;
+  grid-gap:20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+}
+.imageGallery img{
+  max-width:250px;
+  max-height:200px;
+  place-self: center;
+}
+/*https://www.w3schools.com/howto/howto_css_modal_images.asp
+ Style the Image Used to Trigger the Modal */
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*END Project styling*/
+
+/*CV styling*/
+.education{
+  display: grid;
+  grid-template-columns:1fr 3fr 2fr 4fr;
+}
+.exhibitions{
+  display: grid;
+  grid-template-columns:1fr 2fr 4fr 2fr;
+}
+.teaching{
+  display: grid;
+  grid-template-columns:1fr 2fr 4fr 2fr;
+}
+.groupEx{
+  display: grid;
+  grid-template-columns:1fr 3fr 3fr 2fr;
+}
+.experience{
+  display: grid;
+  grid-template-columns:1fr 3fr 3fr 2fr;
+}
+.residencies{
+  display: grid;
+  grid-template-columns:1fr 4fr 2fr;
+}
+.lectures{
+  display: grid;
+  grid-template-columns:1fr 4fr 2fr;
+}
+.awards{
+  display: grid;
+  grid-template-columns:1fr 7fr;
+}
+.volunteer {
+  display: grid;
+  grid-template-columns:1fr 2fr 2fr 1fr;
+}
+.cvwrapper{
+  margin:30px;
+}
+.cvwrapper p{
+  margin: 3px;
+}
+/*END CV styling*/
+
+/*Video page styling*/
+.videoPage{
+  display: grid;
+  grid-gap: 20px;
+}
+/*END Video page styling*/
+
+/*660 break point where videos need to get smaller*/

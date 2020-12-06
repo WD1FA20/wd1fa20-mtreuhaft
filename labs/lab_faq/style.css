@@ -1,0 +1,37 @@
+html{
+  background-color: #333399;
+  font-family: Arial;
+}
+
+li{
+  color: #99ccff;
+}
+li:odd{
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+h1, p, form{
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+input{
+  color:#333399;
+  margin: 10px;
+}
+
+button{
+  color:#99ccff;
+  margin: 10px;
+  border: none;
+  background-color:#333399;
+}
+
+.hide {
+  display: none;
+}
