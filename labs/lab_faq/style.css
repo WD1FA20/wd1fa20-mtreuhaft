@@ -30,6 +30,7 @@ button{
   margin: 10px;
   border: none;
   background-color:#333399;
+  outline:none;
 }
 
 /*get rid of styling when button is pressed?*/
