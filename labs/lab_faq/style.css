@@ -32,6 +32,8 @@ button{
   background-color:#333399;
 }
 
+/*get rid of styling when button is pressed?*/
+
 .hide {
   display: none;
 }
