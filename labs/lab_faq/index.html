@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+  
     <button id='hide-all'>Hide All</button>
     <button id='show-all'>Show All</button>
     <hr class="solid">
@@ -31,10 +33,11 @@
     <h1>Add a Question/Answer</h1>
     <hr class="solid">
     <form action='script.js' method='get' id='question_form'>
-      FAQ Question: <input type='text' name='question' id='question' value='ask a question'><br>
+      FAQ Question: <input type='text' name='question' id='question'><br>
       FAQ Answer: <textarea name='answer' id='answer'>Answer it</textarea><br>
-      <input type='submit' value='Add FAQ' id='submit'><br>
     </form>
+    <button id="append" type='submit'>Add FAQ</button>
+
       <!-- jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script.js"></script>
