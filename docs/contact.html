@@ -15,14 +15,22 @@
 
 <body>
   <nav id="placeholder"></nav>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+
   <header>
     <h1>Contact</h1>
   </header>  
   <section>
-    <!--form-->
+    <form action="contact.html" method:'get' id="email">
+      Name: <input type="text" name="item" id='item'><br>
+      Email Address: <input type="text" name="emailAd" id='emailAd'><br>
+      Message: <textarea name="message" id="message"></textarea>
+      <br>
+      <input id="send" type="submit" value="Send">
+    </form>
   </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
