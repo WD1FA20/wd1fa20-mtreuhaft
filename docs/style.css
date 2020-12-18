@@ -29,13 +29,19 @@ h2{
   font-size:20px;
 }
 .video{
-  display:grid;
-  max-width: 100%;
-  height: auto;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
 }
-iframe{
-  place-self: center;
+.video iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
 a{
   text-decoration: none;
 }

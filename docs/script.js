@@ -1,5 +1,5 @@
 $('#placeholder').load('navigation.html');
-
+$('#foot').load('footer.html');
 // Event Listener to Process Form Submission
 
 $('#send').on('click', function(e) {
