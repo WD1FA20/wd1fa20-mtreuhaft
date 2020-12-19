@@ -10,6 +10,7 @@ html{
   background-color: #FFFFFF;
   font-family: "Avenir Light", "Arial Narrow", sans-serif; 
 } 
+
 header{
   display:grid;
 }
@@ -44,6 +45,7 @@ h2{
 
 a{
   text-decoration: none;
+  color: #000000;
 }
 
 /*NAVBAR START*/
@@ -257,11 +259,34 @@ td:last-child{
 }
 /*END Scenic Art*/
 
+/*CONTACT FORM STYLING*/
+form {
+  display: grid;
+  padding: 1em;
+  background: #f9f9f9;
+  border 1px solid #c1c1c1;
+  margin: 2rem auto 0 auto;
+  max-width: 500px;
+}
+input:focus{
+  outline: 1px solid skyblue;
+}
+textarea:focus{
+  outline: 1px solid skyblue;
+}
+input textarea{
+  margin: 10px;
+}
+#send{
+  margin: 10px auto 0 auto;
+  max-width: 200px;
+}
+/*END CONTACT FORM STYLING*/
+
 /*LIGHTBOX*/
 body.lb-disable-scrolling {
   overflow: hidden;
 }
-
 .lightboxOverlay {
   position: absolute;
   top: 0;
