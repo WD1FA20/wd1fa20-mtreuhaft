@@ -175,7 +175,7 @@ footer p{
   justify-content:center;
   display: grid;
   grid-gap:10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
 }
 .imageGallery a{
   place-self: center;
