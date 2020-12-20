@@ -515,5 +515,6 @@ body.lb-disable-scrolling {
 /*660 break point where videos need to get smaller*/
 
 @media (max-width: 380px) {
-  
+  .project{
+  color: #FFFFFF;
 }
