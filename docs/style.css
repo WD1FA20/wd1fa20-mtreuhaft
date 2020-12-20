@@ -250,9 +250,12 @@ footer p{
 /*END News styling*/
 
 /*Video page styling*/
-.videoPage{
+#videoPage{
   display: grid;
   grid-gap: 20px;
+}
+#videoPage iframe{
+  justify-self:center;
 }
 /*END Video page styling*/
 
@@ -512,9 +515,12 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-/*660 break point where videos need to get smaller*/
 
+/*category, for mobile, try to make names of shows visible because no one can hover*/
 @media (max-width: 380px) {
   .project{
   color: #FFFFFF;
+  }
+@media (min-width: 381px) {
+  .project:hover {color:#FFFFFF; opacity:.7;}
 }
