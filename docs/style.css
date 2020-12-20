@@ -21,11 +21,9 @@ h1{
   place-self: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 1px 1px #425375; /*change or delete*/
-  line-height: 40px;  /*change or delete*/
-  font-style: oblique;
-  
+  text-align: center;
 }
+
 h2{
   font-size:20px;
 }
@@ -177,7 +175,7 @@ footer p{
   justify-content:center;
   display: grid;
   grid-gap:10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
 }
 .imageGallery a{
   place-self: center;
@@ -185,10 +183,13 @@ footer p{
 
 /*END Project styling*/
 
-/*CV styling*/
-.cvwrapper p{
+/*Artist statement styling*/
+/*.artist_statement_wrapper p{
   text-indent: 20px;
-} /*remove when page gets smaller*/
+} */
+/*END Artist statement styling*/
+
+/*CV styling*/
 .education{
   display: grid;
   grid-template-columns:1fr 3fr 2fr 4fr;
@@ -233,6 +234,21 @@ footer p{
 }
 /*END CV styling*/
 
+/*News styling*/
+#news{
+  text-shadow: 2px 2px #F25375; 
+  line-height: 40px; 
+  font-style: oblique;
+} 
+#news_wrapper{
+  display: grid;
+  
+}
+#news_wrapper p{
+  text-align: center;
+}
+/*END News styling*/
+
 /*Video page styling*/
 .videoPage{
   display: grid;
@@ -260,6 +276,9 @@ td:last-child{
 /*END Scenic Art*/
 
 /*CONTACT FORM STYLING*/
+#contact-wrapper{
+  display:grid;
+}
 form {
   display: grid;
   padding: 1em;
@@ -280,6 +299,11 @@ input textarea{
 #send{
   margin: 10px auto 0 auto;
   max-width: 200px;
+}
+#social{
+  place-self:center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 /*END CONTACT FORM STYLING*/
 
@@ -489,3 +513,7 @@ body.lb-disable-scrolling {
 }
 
 /*660 break point where videos need to get smaller*/
+
+@media (max-width: 380px) {
+  
+}

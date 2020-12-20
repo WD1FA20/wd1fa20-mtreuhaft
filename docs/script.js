@@ -8,4 +8,5 @@ $('#send').on('click', function(e) {
   $newP = $(`<p>Thank you ${$name.val()}. I'll be in touch soon.</p>`);
   $('#send').after($newP);
   $("#email").trigger("reset"); //reset form in jQuery.//
+  
 });

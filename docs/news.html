@@ -1,6 +1,6 @@
 <!--
-- Filename:		contact
-- Description:	Single contact page (not intended as a template)
+- Filename:		news.html
+- Description:	News
 - Author:		Melanie Treuhaft
 -->
 <!DOCTYPE html>
@@ -10,23 +10,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
-  <title>Contact</title>
+  <title>News</title>
 </head>
 
 <body>
   <nav id="placeholder"></nav>
-  <section id=contact-wrapper>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <section id="news_wrapper"> 
     <header>
-      <h1>Contact</h1>
-    </header>  
-    <section>
-      <form action="contact.html" method:'get' id="email">
-        Name: <input type="text" name="item" id='item'>
-        Email Address: <input type="text" name="emailAd" id='emailAd'>
-        Message: <textarea name="message" id="message"></textarea>
-        <input id="send" type="submit" value="Send">
-      </form>
-    </section>
+      <h1 id='news'>News</h1>
+    </header>
+    <p>See social media for the latest:</p>
     <section id='social'>
       <!-- Add icon library -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,8 +33,9 @@
     </section>
   </section>
 </body>
-
-<footer id="foot"></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script.js"></script>
-</html>
+  
+  <footer id="foot"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  
+  </html>
