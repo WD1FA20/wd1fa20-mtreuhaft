@@ -271,21 +271,8 @@ footer p{
 /*END Video page styling*/
 
 /*Scenic Art table*/
-table{
-  border-collapse: collapse;
-}
-th, td {
-  border: 1px solid #000000;
-  padding: .25em .5em;
-}
-tbody tr:nth-child(even) {
-  background: #748484;
-}
-thead{
-  border-bottom: 3px solid #000000;
-}
-td:last-child{
-  text-align: center;
+#scenic_art_resume{
+  margin:30px;
 }
 /*END Scenic Art*/
 
