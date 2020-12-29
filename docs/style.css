@@ -124,35 +124,35 @@ footer p{
   font-style: bold;
 }
 .memory{
-  background-image: url("In_Memory_project_image.jpg");
+  background-image: url("Cover_images/In_Memory_project_image.jpg");
   background-size: cover;
 }  
 .evades{
-  background-image: url("TWEU_project_image.jpg");
+  background-image: url("Cover_images/TWEU_project_image.jpg");
   background-size: cover;
 }
 .rosacea{
-  background-image: url("Rosacea_project_image.jpg");
+  background-image: url("Cover_images/Rosacea_project_image.jpg");
   background-size: cover;
 }
 .staging{
-  background-image: url("Staging_project_image.jpg");
+  background-image: url("Cover_images/Staging_project_image.jpg");
   background-size: cover;
 }
 .cast{
-  background-image: url("CAST_project_image.jpg");
+  background-image: url("Cover_images/CAST_project_image.jpg");
   background-size: cover;
 }
 .non-linear{
-  background-image: url("Non-Linear-Fallout_project_image.jpg");
+  background-image: url("Cover_images/Non-Linear-Fallout_project_image.jpg");
   background-size: cover;
 }
 .WAWWM{
-  background-image: url("WAWWM_project_image.jpg");
+  background-image: url("Cover_images/WAWWM_project_image.jpg");
   background-size: cover;
 }
 .gss{
-  background-image: url("GSS_project_image.jpg");
+  background-image: url("Cover_images/GSS_project_image.jpg");
   background-size: cover;
 }
 .project:hover {color:#FFFFFF; opacity:.7;}
