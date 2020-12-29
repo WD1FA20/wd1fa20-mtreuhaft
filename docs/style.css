@@ -239,6 +239,12 @@ footer p{
 }
 /*END CV styling*/
 
+/*Artist Statement*/
+#artist_statement{
+  margin:30px;
+}
+/*END Artist Statement*/
+
 /*News styling*/
 #news{
   text-shadow: 2px 2px #F25375; 
