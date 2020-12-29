@@ -106,7 +106,7 @@ footer p{
 }
 /*END Footer*/
 
-/*Category styling*/
+/*Category styling-Installation*/
 .projectGallery {
   justify-content:center;
   display: grid;
@@ -161,6 +161,43 @@ footer p{
   background: black, ;
 }
 /*END Category styling*/
+
+/*Painting Category styling*/
+.grid{
+  background-image: url("Cover_images/Grid_coverimage.jpg");
+  background-size: cover;
+}  
+.dots{
+  background-image: url("Cover_images/Dot_coverimage.jpg");
+  background-size: cover;
+}
+.glass{
+  background-image: url("Cover_images/Glass_coverimage.jpg");
+  background-size: cover;
+}
+.watercolors{
+  background-image: url("Cover_images/Watercolor_coverimage.jpg");
+  background-size: cover;
+}
+.dust{
+  background-image: url("Cover_images/Dust_coverimage.jpg");
+  background-size: cover;
+}
+.GFAL{
+  background-image: url("Cover_images/GFALstudios_coverimage.jpg");
+  background-size: cover;
+}
+.CAandChicago{
+  background-image: url("Cover_images/CA_coverimage.jpg");
+  background-size: cover;
+}
+
+.project:hover {color:#FFFFFF; opacity:.7;}
+/* 
+.project:hover span {
+  background: black, ;
+}
+/*END Painting category styling*/
 
 /*Project styling*/
 .galleryWrapper{
